@@ -6,25 +6,12 @@ html, body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: url("https://images.unsplash.com/photo-1689267305146-155a1459752c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3828&q=80");
+  background-image: url("https://i.postimg.cc/QMcwNjPr/philip-oroni-MKapncn-H4n-U-unsplash.png");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: rgba(0, 0, 0, 1); /* Start with 100% darkness */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-/* Add styles for the light/dark mode button */
-.light-dark-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background-color: transparent;
-  border: none;
-  font-family: 'Material Symbols Outlined', sans-serif;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
 }
 
 .container {
@@ -59,26 +46,6 @@ body {
   margin-right: 80px;
   max-width: 600px; /* Set maximum width for the paragraph */
   word-wrap: break-word; /* Allow the paragraph to wrap */
-}
-
-.scroll-down-box {
-  position: absolute;
-  bottom: 50px; /* Adjust the position */
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-  font-size: 18px;
-  display: flex; /* Use flexbox to align text and arrow */
-  align-items: center; /* Center items vertically */
-  opacity: 1;
-  transition: opacity 1s ease-out;
-}
-
-.down-arrow {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700; /* Make the arrow bold */
-  font-size: 36px;
-  margin-left: 5px; /* Add some space between text and arrow */
 }
 
 .box-container {
@@ -129,71 +96,4 @@ body {
 .box-paragraph {
   font-size: 16px;
   line-height: 2; /* Add spacing between lines of text */
-}
-
-.icons-container {
-  position: absolute;
-  top: 40px;
-  left: 40px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-}
-
-.icons-container a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #9bbdcd00; /* Outline color */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
-  background-color: transparent;
-}
-
-.icons-container a svg {
-  width: 20px;
-  height: 20px;
-  fill: #9bbdcd00; /* Use currentColor to inherit the icon color from parent (stroke or fill) */
-}
-
-.icons-container a:hover svg {
-  stroke-width: 0; /* Remove the stroke on hover */
-  fill: #ffffff; /* Set the fill color on hover */
-}
-
-.icons-container a:hover {
-  transform: translateY(-5px);
-  border-color: #ffffff00; /* Change outline color on hover */
-}
-
-/* Style the LinkedIn icon with fill and stroke */
-.icons-container .linkedin-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: #9bbdcd00; /* Set the fill color for LinkedIn icon */
-  stroke: #9bbdcd; /* Set the stroke color for LinkedIn icon */
-}
-
-/* Style the GitHub icon with fill and stroke */
-.icons-container .github-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: #9bbdcd00; /* Set the fill color for GitHub icon */
-  stroke: #9bbdcd; /* Set the stroke color for GitHub icon */
-}
-
-/* Style the Dribbble icon without stroke (only fill) */
-.icons-container .dribbble-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: #9bbdcd; /* Use currentColor to inherit the icon color from parent (fill) */
-  stroke-width: 0; /* Remove the stroke */
-}
-
-/* Change fill color on hover for the Dribbble icon */
-.icons-container .dribbble-icon svg:hover {
-  fill: #ffffff; /* Set the fill color on hover */
 }
