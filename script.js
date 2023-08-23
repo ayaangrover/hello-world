@@ -63,7 +63,7 @@ function fadeOutScrollBox() {
 }
 
 // Call the revealElements and fadeBackground functions when the page loads
-window.onload = function() {
+window.onload = function () {
   revealElements();
   fadeBackground();
   revealBoxes();
@@ -83,7 +83,7 @@ if (
   currentDate.getDate() === birthday.getDate() &&
   currentDate.getMonth() === birthday.getMonth()
 ) {
-// Change favicon to "me-celebrate.png"
+  // Change favicon to "me-celebrate.png"
   const link = document.querySelector("link[rel~='icon']");
   link.href = "path/to/me-celebrate.png";
 }
